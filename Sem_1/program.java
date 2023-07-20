@@ -11,7 +11,8 @@ public class program {
         // String s = null; // определяется парой
         // System.out.println(s); //определяется парой
         // task2();
-        System.out.println(task3("Добро пожаловать на курс по Java"));
+        // System.out.println(task3("Добро пожаловать на курс по Java"));
+        System.out.println(task4(2, -2));
     }
 
     static void task0() {
@@ -62,9 +63,7 @@ public class program {
                     maxOnes = temp;
                 }
                 temp = 0;
-
             }
-
         }
         if (temp > maxOnes)
             maxOnes = temp;
@@ -100,13 +99,38 @@ public class program {
          * порядке.
          */
 
-        // str = str.toLowerCase();
+        str = str.toLowerCase();
         String[] strArr = str.split(" ");
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 9; i < strArr.length; i++) {
+        for (int i = 0; i < strArr.length; i++) {
             stringBuilder.append(strArr[strArr.length - 1 - i]).append(" ");
         }
         return stringBuilder.toString();
     }
+
+    /*
+     * ЗАДАЧА 4:
+     * Реализовать функцию возведения числа а в степень b. а, b из Z.
+     * Сводя количество выполняемых действий к минимуму.
+     * Пример 1: а = 3, b = 2, ответ: 9
+     * Пример 2: а = 2, Ь = -2, ответ: 0.25
+     * Пример 3: а = 3, b = 0, ответ: 1
+     */
+    
+    // Вариант 1:
+    // static double task4(double a, double b) {
+    //     double result = Math.pow(a, b);
+    //     return result;
+    // }
+
+       // Вариант 2: 
+    static double task4(double a, double b){
+        double result = 1;
+       if(a==1 || b==0) return 1;
+       for (int i=0; i < Math.abs(b); i++) {
+        result = result * a;
+       }
+       return b > 0 ? result : 1/result;
+       }
 
 }
