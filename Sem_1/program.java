@@ -10,9 +10,9 @@ public class program {
         // System.out.println("bye world");
         // String s = null; // определяется парой
         // System.out.println(s); //определяется парой
-        // task2();
+        task5();
         // System.out.println(task3("Добро пожаловать на курс по Java"));
-        System.out.println(task4(2, -2));
+        // System.out.println(task4(2, -2));
     }
 
     static void task0() {
@@ -116,21 +116,27 @@ public class program {
      * Пример 2: а = 2, Ь = -2, ответ: 0.25
      * Пример 3: а = 3, b = 0, ответ: 1
      */
-    
+
     // Вариант 1:
     // static double task4(double a, double b) {
-    //     double result = Math.pow(a, b);
-    //     return result;
+    // double result = Math.pow(a, b);
+    // return result;
     // }
 
-       // Вариант 2: 
-    static double task4(double a, double b){
+    // Вариант 2:
+    static double task4(double a, double b) {
         double result = 1;
-       if(a==1 || b==0) return 1;
-       for (int i=0; i < Math.abs(b); i++) {
-        result = result * a;
-       }
-       return b > 0 ? result : 1/result;
-       }
+        if (a == 1 || b == 0)
+            return 1;
+        for (int i = 0; i < Math.abs(b); i++) {
+            result = result * a;
+        }
+        return b > 0 ? result : 1 / result;
+    }
 
+    static void task5() {
+        int a = 123;
+        a = a-- - --a;
+        System.out.println(a);
+    }
 }

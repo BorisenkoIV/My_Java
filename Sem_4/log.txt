@@ -1,0 +1,4 @@
+"гггг-мм-дд чч:мм User entered the first operand = {первое число}"
+"гггг-мм-дд чч:мм User entered the operation = {оператор}"
+"гггг-мм-дд чч:мм User entered the second operand = {второе число}"
+"гггг-мм-дд чч:мм Result is {результат}"
