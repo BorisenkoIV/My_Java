@@ -1,6 +1,6 @@
 package Sem_5;
 
-public class program {
+public class program5 {
     // Архип Чижанов
     // Администратор
     // <aside>

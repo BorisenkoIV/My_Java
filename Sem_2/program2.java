@@ -7,7 +7,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-public class program {
+public class program2 {
     
     public static void main(String[] args) {
         // System.out.println("bye world");

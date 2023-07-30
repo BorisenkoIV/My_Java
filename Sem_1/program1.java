@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Program
  */
-public class program {
+public class program1 {
     public static void main(String[] args) {
         // System.out.println("bye world");
         // String s = null; // определяется парой
