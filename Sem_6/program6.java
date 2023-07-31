@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class program {
+public class program6 {
 
     public static void main(String[] args) {
         // System.out.println("bye world");

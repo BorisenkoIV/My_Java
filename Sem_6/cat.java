@@ -29,10 +29,12 @@ public class cat {
     private String name;
     private String owner;
     private String breed;
-    private int age;
-    this.breed=breed;healthHistory=new ArrayList<>();
+    private Integer age;
+    
+    this.breed=breed;
+    healthHistory=new ArrayList<>();
     // private List<String> healthHistory;
-}
+
 
  @Override
     public String toString() {
@@ -55,6 +57,7 @@ public class cat {
     public int hashCode() {
         return 15 * name.hashCode() + 11 * owner.hashCode() + 3 * breed.hashCode() + 23 * age;
     }
+}
 
 // **Текст задачи:**
 // 1. Реализуйте 1 из вариантов класса Cat из предыдущего задания, можно
@@ -95,5 +98,3 @@ public class cat {
 // 5. Выведите снова содержимое множества из пункта 2, убедитесь, что дубликаты
 // удалились.
 
-// Архип Чижанов (Администратор)
-// public class Cat {

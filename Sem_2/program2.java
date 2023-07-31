@@ -1,11 +1,16 @@
 package Sem_2;
-
+import java.io.IOException;
+import java.util.logging.*;
 import java.io.FileWriter;
 import java.lang.System.Logger.Level;
 import java.util.Arrays;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
+// import java.util.Arrays;
+// import java.util.logging.FileHandler;
+// import java.util.logging.Logger;
+// import java.util.logging.SimpleFormatter;
+//import java.util.logging.*;
+
+
 
 public class program2 {
     
@@ -108,7 +113,7 @@ static void task4 (String str) {
  * @param str
  */
 static void task5 (String str) {
-        String path = "/f/f/text.txt";
+        String path = "text.txt";
 
         Logger logger = Logger.getAnonymousLogger();
         FileHandler handler = null;
@@ -127,7 +132,7 @@ static void task5 (String str) {
             writer.flush();
         } catch (Exception e){
             e.printStackTrace();
-            logger.log(Level.WARNING , e.getMessage());
+            logger.log(Level.WARNING, e.getMessage());
         }
     }  
 }
